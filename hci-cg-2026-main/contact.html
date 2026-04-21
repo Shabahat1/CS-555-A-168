@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Character encoding for consistent text rendering -->
+  <meta charset="UTF-8">
+
+  <!-- Page title shown in browser tab and announced by screen readers -->
+  <title>Syed Shabahat Hussain – Contact</title>
+
+  <style>
+    /* Lab 01 Constraints: Only color, background-color, font-family, font-size allowed */
+    body {
+      color: #333;
+      background-color: #f9f9f9;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+    }
+
+    header {
+      color: #fff;
+      background-color: #1a3a52;
+    }
+
+    header h1 {
+      font-size: 32px;
+    }
+
+    nav {
+      background-color: #2c5aa0;
+      color: #fff;
+    }
+
+    nav a {
+      color: #fff;
+    }
+
+    nav a[aria-current="page"] {
+      color: #ffeb3b;
+      font-weight: bold;
+    }
+
+    main {
+      color: #333;
+      background-color: #fff;
+    }
+
+    fieldset {
+      border-color: #2c5aa0;
+      color: #333;
+    }
+
+    legend {
+      color: #1a3a52;
+      font-size: 18px;
+    }
+
+    label {
+      color: #333;
+      font-size: 16px;
+    }
+
+    input,
+    textarea {
+      background-color: #f0f0f0;
+      color: #333;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+    }
+
+    button {
+      background-color: #2c5aa0;
+      color: #fff;
+      font-size: 16px;
+    }
+
+    footer {
+      background-color: #1a3a52;
+      color: #fff;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Page header: identifies the page purpose -->
+  <header>
+    <h1>Contact</h1>
+  </header>
+
+  <!-- Primary navigation: identical structure across all pages -->
+  <nav aria-label="Primary navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="cv.html">CV</a></li>
+
+      <!-- Current page is indicated using aria-current -->
+      <li><a href="contact.html" aria-current="page">Contact</a></li>
+
+      <li><a href="analysis.html">Security Analysis</a></li>
+      <li><a href="norman2klm.html">HCI Cognitive Models</a></li>
+      <li><a href="interaction.html">Interaction Principles</a></li>
+      <li><a href="error_guide.html">HTML Errors</a></li>
+      <li><a href="syringe_case.html">Syringe Case Study</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main landmark: primary content of this page -->
+  <main>
+    <section>
+      <h2>Get in Touch</h2>
+      <p>
+        Have questions about security engineering, HCI research, or penetration testing? 
+        Use the form below to send me a message. I'll respond as soon as possible.
+      </p>
+    </section>
+
+    <form action="#" method="post">
+      
+      <!-- Groups related form controls and provides context -->
+      <fieldset>
+        <legend>Send a Message</legend>
+
+        <!-- Label explicitly associated with its input -->
+        <label for="name">Name</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <!-- Email field for reply -->
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!-- Label explicitly associated with its input -->
+        <label for="subject">Subject</label><br>
+        <input type="text" id="subject" name="subject" required><br><br>
+
+        <!-- Textarea with clear label for screen readers -->
+        <label for="message">Message</label><br>
+        <textarea id="message" name="message" rows="5" cols="30" required></textarea><br><br>
+
+        <!-- Submit button is keyboard accessible by default -->
+        <button type="submit">Send Message</button>
+      </fieldset>
+
+    </form>
+  </main>
+
+  <!-- Footer provides supplementary information -->
+  <footer>
+    <p><small>All messages are received and reviewed personally. Keyboard accessible form with screen-reader friendly labels.</small></p>
+  </footer>
+
+</body>
+</html>

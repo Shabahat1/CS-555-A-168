@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Errors - HCI-CG Lab 01</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            color: #1a1a1a;
+            background-color: #fdfdfd;
+            font-size: 16px;
+        }
+        header {
+            background-color: #c0392b;
+            color: #ffffff;
+        }
+
+        header h1 {
+            font-size: 32px;
+        }
+
+        nav {
+            background-color: #2c3e50;
+            color: #fff;
+        }
+
+        nav a {
+            color: #ffffff;
+        }
+
+        nav a[aria-current="page"] {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+
+        main {
+            color: #1a1a1a;
+            background-color: #fff;
+        }
+
+        h2 {
+            color: #c0392b;
+            border-bottom: 2px solid #c0392b;
+        }
+
+        .error {
+            color: #c0392b;
+        }
+
+        .solution {
+            color: #27ae60;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>HTML Usability & Syntax</h1>
+        <p>Bridging the Gulf of Execution through Standards</p>
+    </header>
+
+    <nav aria-label="Primary navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="analysis.html">Security Analysis</a></li>
+            <li><a href="norman2klm.html">HCI Cognitive Models</a></li>
+            <li><a href="interaction.html">Interaction Principles</a></li>
+            <li><a href="error_guide.html" aria-current="page">HTML Errors</a></li>
+            <li><a href="syringe_case.html">Syringe Case Study</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>10 Common HTML Failures in HCI</h2>
+            <p>From an HCI perspective, code errors lead to accessibility and usability barriers.</p>
+
+            <dl>
+                <dt><strong>1. Unlabeled Form Controls</strong></dt>
+                <dd class="error">Error: <code>&lt;input type="text"&gt;</code> (No context for screen readers).</dd>
+                <dd class="solution">Fix: <code>&lt;label for="id"&gt;Label&lt;/label&gt;</code></dd>
+
+                <dt><strong>2. Missing 'Alt' Attributes</strong></dt>
+                <dd class="error">Error: <code>&lt;img src="icon.png"&gt;</code></dd>
+                <dd class="solution">Fix: Add <code>alt="Description"</code> for perception (Dix, Ch. 1).</dd>
+
+                <dt><strong>3. Improper Heading Hierarchy</strong></dt>
+                <dd class="error">Error: Using <code>&lt;h4&gt;</code> because of its default size without an <code>&lt;h1&gt;</code>.</dd>
+                <dd class="solution">Fix: Use headings to define semantic structure, not style.</dd>
+
+                <dt><strong>4. Broken Links</strong></dt>
+                <dd class="error">Error: <code>&lt;a href="#"&gt;Click Here&lt;/a&gt;</code> (Vague intent).</dd>
+                <dd class="solution">Fix: Describe the destination clearly.</dd>
+
+                <dt><strong>5. Duplicate IDs</strong></dt>
+                <dd class="error">Error: Multiple elements with <code>id="nav"</code>.</dd>
+                <dd class="solution">Fix: IDs must be unique to prevent script/CSS failures.</dd>
+
+                <dt><strong>6. Non-Semantic HTML</strong></dt>
+                <dd class="error">Error: Using <code>&lt;div&gt;</code> for everything.</dd>
+                <dd class="solution">Fix: Use <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;article&gt;</code>.</dd>
+
+                <dt><strong>7. Missing Language Attribute</strong></dt>
+                <dd class="error">Error: <code>&lt;html&gt;</code></dd>
+                <dd class="solution">Fix: <code>&lt;html lang="en"&gt;</code> (Critical for screen readers).</dd>
+
+                <dt><strong>8. Poor Contrast</strong></dt>
+                <dd class="error">Error: Light grey on white background.</dd>
+                <dd class="solution">Fix: Ensure WCAG 2.1 contrast ratios.</dd>
+
+                <dt><strong>9. Fixed-Width Tables for Layout</strong></dt>
+                <dd class="error">Error: <code>&lt;table width="800"&gt;</code></dd>
+                <dd class="solution">Fix: Use tables only for data, not layout.</dd>
+
+                <dt><strong>10. Interactive Elements not Keyboard Focusable</strong></dt>
+                <dd class="error">Error: <code>&lt;span onclick="..."&gt;Button&lt;/span&gt;</code></dd>
+                <dd class="solution">Fix: Use <code>&lt;button&gt;</code> or <code>tabindex="0"</code>.</dd>
+            </dl>
+        </section>
+    </main>
+
+    <footer>
+        <p><small>Last updated: February 2026 | HCI Lab 01 – HTML Accessibility & Usability</small></p>
+    </footer>
+
+</body>
+</html>

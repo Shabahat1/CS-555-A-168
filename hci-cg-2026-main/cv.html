@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Character encoding for consistent text rendering -->
+  <meta charset="UTF-8">
+
+  <!-- Page title shown in browser tab and announced by screen readers -->
+  <title>Syed Shabahat Hussain – Curriculum Vitae</title>
+
+  <style>
+    /* Lab 01 Constraints: Only color, background-color, font-family, font-size allowed */
+    body {
+      color: #333;
+      background-color: #f9f9f9;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+    }
+
+    header {
+      color: #fff;
+      background-color: #1a3a52;
+    }
+
+    header h1 {
+      font-size: 32px;
+    }
+
+    nav {
+      background-color: #2c5aa0;
+      color: #fff;
+    }
+
+    nav a {
+      color: #fff;
+    }
+
+    nav a[aria-current="page"] {
+      color: #ffeb3b;
+      font-weight: bold;
+    }
+
+    main {
+      color: #333;
+      background-color: #fff;
+    }
+
+    section h2 {
+      color: #1a3a52;
+      font-size: 24px;
+    }
+
+    article h3 {
+      color: #2c5aa0;
+      font-size: 18px;
+    }
+
+    .cert-highlight {
+      background-color: #fff3cd;
+      color: #1a3a52;
+    }
+
+    footer {
+      background-color: #1a3a52;
+      color: #fff;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Page header: identifies the page -->
+  <header>
+    <h1>Curriculum Vitae</h1>
+    <p>Syed Shabahat Hussain</p>
+  </header>
+
+  <!-- Primary navigation: consistent across all pages -->
+  <nav aria-label="Primary navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+
+      <!-- Current page is indicated using aria-current -->
+      <li><a href="cv.html" aria-current="page">CV</a></li>
+
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="analysis.html">Security Analysis</a></li>
+      <li><a href="norman2klm.html">HCI Cognitive Models</a></li>
+      <li><a href="interaction.html">Interaction Principles</a></li>
+      <li><a href="error_guide.html">HTML Errors</a></li>
+      <li><a href="syringe_case.html">Syringe Case Study</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main landmark: unique content of this page -->
+  <main>
+
+    <section>
+      <h2>Education</h2>
+      <ul>
+        <li><strong>Bachelor of Science in Computer Science (BSCS)</strong> – Karachi University UBIT, 3rd Year (In Progress)</li>
+        <li><strong>Focus:</strong> Human-Computer Interaction, Security Interface Design</li>
+        <li><strong>Relevant Coursework:</strong> HCI Theory, Cognitive Models (Norman, GOMS, KLM), Web Application Security, User-Centered Design</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Professional Certifications</h2>
+      <div class="cert-highlight">
+        <strong>SEC1 Certified Security Engineer</strong> – EC-Council
+        <p>Advanced certification in security engineering, threat modeling, defense mechanisms, and security compliance.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Work Experience & Projects</h2>
+
+      <!-- Each role is grouped as a separate content unit -->
+      <article>
+        <h3>HCI Research & Student Project</h3>
+        <p>Exploring usable security design through the lens of Norman's action cycle, GOMS analysis, and KLM operator timing. Learning how HCI principles apply to authentication interfaces and security system usability. This is part of my academic coursework in Human-Computer Interaction.</p>
+      </article>
+
+      <article>
+        <h3>Security Learning & Ethical Hacking Practice</h3>
+        <p>Practical study of penetration testing, vulnerability assessment, and secure system design. Working on authorized security exercises to understand common vulnerabilities and best practices. Pursuing knowledge in alignment with SEC1 certification requirements.</p>
+      </article>
+
+      <article>
+        <h3>Web Application Security</h3>
+        <p>Learning OWASP Top 10 vulnerabilities, secure coding practices, and web security fundamentals. Building understanding of how to design and evaluate web applications for both security and usability.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Technical Skills</h2>
+      <ul>
+        <li><strong>Security:</strong> Penetration Testing Fundamentals, Vulnerability Assessment, OWASP Top 10, Network Security Basics, Ethical Hacking</li>
+        <li><strong>HCI & Usability:</strong> Norman's Seven Stages, GOMS Analysis, KLM Operators, User Research, Accessibility (WCAG 2.1, Semantic HTML), Cognitive Walkthrough</li>
+        <li><strong>Programming:</strong> Python, JavaScript, HTML/CSS, SQL</li>
+        <li><strong>Tools:</strong> Kali Linux, Burp Suite, Wireshark, Nmap, VS Code</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- Footer contains supplementary navigation and meta information -->
+  <footer>
+    <p><small>Last updated: February 2026</small></p>
+  </footer>
+
+</body>
+</html>

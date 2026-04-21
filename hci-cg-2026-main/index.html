@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Character encoding for proper text rendering -->
+  <meta charset="UTF-8">
+
+  <!-- Page title shown in browser tab and screen readers -->
+  <title>Syed Shabahat Hussain – Security Engineer & HCI Researcher</title>
+
+  <style>
+    /* Lab 01 Constraints: Only color, background-color, font-family, font-size allowed */
+    body {
+      color: #333;
+      background-color: #f9f9f9;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+    }
+
+    header {
+      color: #fff;
+      background-color: #1a3a52;
+    }
+
+    header h1 {
+      font-size: 32px;
+    }
+
+    header p {
+      font-size: 18px;
+    }
+
+    nav {
+      background-color: #2c5aa0;
+      color: #fff;
+    }
+
+    nav a {
+      color: #fff;
+    }
+
+    nav a[aria-current="page"] {
+      color: #ffeb3b;
+      font-weight: bold;
+    }
+
+    main {
+      color: #333;
+      background-color: #fff;
+    }
+
+    section h2 {
+      color: #1a3a52;
+      font-size: 24px;
+    }
+
+    footer {
+      background-color: #1a3a52;
+      color: #fff;
+      font-size: 14px;
+    }
+
+    .credential {
+      background-color: #e8f4f8;
+      color: #1a3a52;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Page header: identifies the student and professional context -->
+  <header>
+    <h1>Syed Shabahat Hussain</h1>
+    <p>3rd Year BSCS Student | SEC1 Certified Security Engineer | Ethical Hacker & Penetration Tester</p>
+  </header>
+
+  <!-- Primary navigation landmark for keyboard and screen reader users -->
+  <nav aria-label="Primary navigation">
+    <ul>
+      <!-- Current page is indicated using aria-current -->
+      <li>
+        <a href="index.html" aria-current="page">Home</a>
+      </li>
+
+      <!-- Navigation links to other site sections -->
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="analysis.html">Security Analysis</a></li>
+      <li><a href="norman2klm.html">HCI Cognitive Models</a></li>
+      <li><a href="interaction.html">Interaction Principles</a></li>
+      <li><a href="error_guide.html">HTML Errors</a></li>
+      <li><a href="syringe_case.html">Syringe Case Study</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main content landmark: unique content of this page -->
+  <main>
+    <section>
+      <!-- Section heading establishes content hierarchy -->
+      <h2>Professional Profile</h2>
+
+      <p>
+        Welcome. I am a 3rd-year Bachelor of Science in Computer Science student at Karachi University UBIT,
+        currently focused on Human-Computer Interaction. As a SEC1 Certified Security Engineer and ethical hacker,
+        I'm interested in exploring how HCI principles can improve the design of security interfaces.
+      </p>
+
+      <p>
+        I'm learning how Norman's action cycle, GOMS analysis, and KLM operators can help us understand 
+        user behavior in security workflows. This portfolio documents my exploration of HCI theory 
+        and its practical application to cybersecurity challenges like authentication design and usable security.
+      </p>
+    </section>
+
+    <section>
+      <h2>Core Competencies</h2>
+      <ul>
+        <li>SEC1 Certified Security Engineer</li>
+        <li>Penetration Testing & Ethical Hacking</li>
+        <li>Web Application Security (OWASP Top 10)</li>
+        <li>Network Security & Firewall Administration</li>
+        <li>Usable Security Design</li>
+        <li>Human-Computer Interaction Fundamentals</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Security-Usability Intersection</h2>
+
+      <p>
+        One of the most critical challenges in cybersecurity is the <strong>security-usability paradox</strong>:
+        the stronger a security measure, the more friction it introduces into the user experience. Norman's seven stages
+        of action provide a cognitive framework for understanding where users encounter gulfs of execution and evaluation
+        in security workflows.
+      </p>
+
+      <p>
+        For example, consider enabling Wi-Fi on a smartphone. A naive implementation may hide the Wi-Fi network list behind
+        multiple taps (gulf of execution), making users resort to turning airplane mode on and off instead. A Norman-informed design
+        shortens the distance between intention and execution—e.g., a quick-settings tile with instant network discovery.
+      </p>
+
+      <p>
+        Similarly, GOMS analysis helps us decompose expert user tasks (e.g., a penetration tester configuring a proxy) into
+        operators (keystroke, pointer, mental operations), revealing bottlenecks where KLM timing predictions suggest that
+        optimizing a single menu structure saves seconds per action and hours per day at scale.
+      </p>
+
+      <p>
+        By applying rigorous HCI methodology to security engineering, we can build systems that protect users without
+        sacrificing usability—a principle central to my research and professional work.
+      </p>
+    </section>
+
+    <section>
+      <h2>Academic Credentials</h2>
+      <div class="credential">
+        <strong>SEC1 Certified Security Engineer</strong>
+        <p>EC-Council certification demonstrating mastery in security engineering, threat modeling, and defensive strategies.</p>
+      </div>
+
+      <div class="credential">
+        <strong>3rd Year BSCS Student (Karachi University UBIT)</strong>
+        <p>Currently pursuing computer science with focus on Human-Computer Interaction and practical applications in security interface design.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer contains supplementary navigation and meta information -->
+  <footer>
+    <p><small>Last updated: February 2026 | HCI Lab 01 – Semantic HTML & Accessibility</small></p>
+  </footer>
+
+</body>
+</html>
