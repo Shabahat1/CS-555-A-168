@@ -8,3 +8,6 @@ https://cs-555-a-168-lerp.vercel.app/
 
 ## 6DOF
 https://lucent-flan-9fd298.netlify.app/
+
+## Fitt's law
+https://zingy-lokum-fca433.netlify.app/
